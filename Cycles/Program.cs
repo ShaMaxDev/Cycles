@@ -13,8 +13,9 @@ namespace Cycles
             Console.WriteLine("Hello! What do you want me to repeat?");
             string userMessage = Console.ReadLine();
             Console.WriteLine("Ok. How many times?");
+            int repeatNumber = Convert.ToInt32(Console.ReadLine());
 
-            for (int repeatNumber = Convert.ToInt32(Console.ReadLine()); repeatNumber > 0; repeatNumber -- )
+            for (int i = repeatNumber; i > 0; i -- )
             {
                 Console.WriteLine(userMessage); 
             }
